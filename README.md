@@ -1,4 +1,23 @@
 # PGMC
+
+# Overview
+In point-cloud representation learning, the encoder maps raw data to high-dimensional feature manifolds and projects them onto low-dimensional semantic manifolds. Corruptions distort this geometric consistency, requiring robust models to calibrate manifold shift. 
+    To this end, we propose a novel robust point-cloud representation framework, termed **P**robabilistic **G**eometry-based **M**anifold **C**alibration (**PGMC**), which leverages geometric unity on the probability simplex to restore distorted manifold mapping dynamically. 
+    Specifically, our proposed PGMC method integrates three key components:
+    (1) A Manifold Shift Degree Quantification module that filters out reliable manifold anchors through mapping different manifolds to the probability simplex. 
+    (2) A Hybrid Calibration Memory module that discretely stores global discriminative anchors and continuously refines local geometry.
+    (3) A Dual Manifold Calibration strategy, which employs a geometry-preserved manifold to anchor the ideal semantic structure and a shift-aware manifold to capture distortions. 
+    By combining different pre-training models, we evaluate our method on three challenging benchmarks for point-cloud corruption and domain shift. 
+    Extensive experiments demonstrate that our PGMC method outperforms existing state-of-the-art methods, significantly enhancing the robustness of pre-trained representation models.
+
+    ![(a) The failure of manifold mapping due to point-cloud corruptions. (b) We propose the Manifold Shift Degree Quantification (MSDQ) module to unify diverse manifolds with coordinate normalization in the probability simplex.](图片地址)
+
+# Framework
+Overview of the proposed PGMC framework. The Discrete Calibration Memory (DCM) and Continuous Calibration Memory (CCM) preserve discrete and continuous geometric semantics, respectively, while the Geometric Preserved Manifold (GPM) and Shift Aware Manifold (SAM) serve as dual calibration spaces to refine the final manifold representation.
+！[Framework of PGMC](图片地址)
+
+    
+
 # Pre-trained Weights and Datasets
 
 Please download the pretrained weights of the four multimodal 3D encoders as well as the datasets from  
