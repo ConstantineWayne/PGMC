@@ -10,11 +10,11 @@ In point-cloud representation learning, the encoder maps raw data to high-dimens
     By combining different pre-training models, we evaluate our method on three challenging benchmarks for point-cloud corruption and domain shift. 
     Extensive experiments demonstrate that our PGMC method outperforms existing state-of-the-art methods, significantly enhancing the robustness of pre-trained representation models.
 
-    ![(a) The failure of manifold mapping due to point-cloud corruptions. (b) We propose the Manifold Shift Degree Quantification (MSDQ) module to unify diverse manifolds with coordinate normalization in the probability simplex.](图片地址)
+    ![(a) The failure of manifold mapping due to point-cloud corruptions. (b) We propose the Manifold Shift Degree Quantification (MSDQ) module to unify diverse manifolds with coordinate normalization in the probability simplex.](./e81143a259dd65d077b378c891ea697d.png)
 
 # Framework
 Overview of the proposed PGMC framework. The Discrete Calibration Memory (DCM) and Continuous Calibration Memory (CCM) preserve discrete and continuous geometric semantics, respectively, while the Geometric Preserved Manifold (GPM) and Shift Aware Manifold (SAM) serve as dual calibration spaces to refine the final manifold representation.
-！[Framework of PGMC](图片地址)
+！[Framework of PGMC](./5eeeaecab36b1d9bf16e71b807ae55b8.png)
 
     
 
