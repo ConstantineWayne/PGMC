@@ -14,7 +14,7 @@ In point-cloud representation learning, the encoder maps raw data to high-dimens
 
 # Framework
 Overview of the proposed PGMC framework. The Discrete Calibration Memory (DCM) and Continuous Calibration Memory (CCM) preserve discrete and continuous geometric semantics, respectively, while the Geometric Preserved Manifold (GPM) and Shift Aware Manifold (SAM) serve as dual calibration spaces to refine the final manifold representation.
-！[Framework of PGMC](./5eeeaecab36b1d9bf16e71b807ae55b8.png)
+<img src="./e81143a259dd65d077b378c891ea697d.png" width="500">
 
     
 
