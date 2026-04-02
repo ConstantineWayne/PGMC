@@ -1,7 +1,7 @@
 # Pre-trained Weights and Datasets
 
 Please download the pretrained weights of the four multimodal 3D encoders as well as the datasets from  
-the official code of **“Point-Cache: Test-time Dynamic and Hierarchical Cache for Robust and Generalizable Point Cloud Analysis” **.
+the official code of “Point-Cache: Test-time Dynamic and Hierarchical Cache for Robust and Generalizable Point Cloud Analysis”.
 
 Place the corresponding weight paths into the appropriate functions in `utils/utils.py`,  
 e.g., `load_ulip`.
