@@ -1,0 +1,14 @@
+name: pgmc
+channels:
+  - pytorch
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.8.16
+  - pip
+  - pip:
+      - torch==1.12.0+cu116
+      - torchvision==0.13.0+cu116
+      - --extra-index-url https://download.pytorch.org/whl/cu116
+      - -r requirements.txt
+

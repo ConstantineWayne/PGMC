@@ -1,0 +1,51 @@
+common:
+  logit_scale: 100.0
+
+  adapter:
+    epochs: 8
+    learning_rate: 0.0001
+    weight_decay: 0.00001
+    num_heads: 8
+    expansion: 4
+    dropout: 0.2
+
+  loss:
+    reconstruction: 1.0
+    classification: 1.0
+    distillation: 1.0
+    entropy: 1.0
+    temperature: 2.0
+
+  cache:
+    initial_target_shots: 3
+    source_positive_capacity: 25
+    source_negative_capacity: 10
+    target_positive_capacity: 25
+    target_negative_capacity: 10
+    positive:
+      alpha: 2.0
+      beta: 3.0
+    negative:
+      alpha: 0.117
+      beta: 1.0
+      mask_threshold: [0.03, 1.0]
+
+  # Selected direct weighted sum from the three variants in the original logs.
+  fusion:
+    zero_shot: 1.0
+    target_global: 1.0
+    target_reconstructed: 1.0
+    source_global: 2.0
+    source_reconstructed: 2.0
+    source_local: 1.0
+    target_local: 1.0
+
+benchmarks:
+  modelnet_c: {}
+  sonn_c: {}
+  sim2real:
+    cache:
+      positive:
+        alpha: 4.0
+        beta: 8.0
+
